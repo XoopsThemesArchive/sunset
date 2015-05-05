@@ -1,0 +1,14 @@
+	<{if $xoops_showrblock == 1}>
+
+<!-- 右ブロック部分の定義 -->
+<td id="rightcolumn">
+	<{foreach item=block from=$xoops_rblocks}>
+	<{if $block.title|regex_replace:"/.*none/":"none" ne "none"}>
+	<div class="blockTitle"><{$block.title}></div>
+	<{/if}>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+</td>
+<!-- 右ブロック部分終わり -->
+
+	<{/if}>

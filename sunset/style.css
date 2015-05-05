@@ -1,0 +1,147 @@
+/* 全般設定 */
+body {color:black; background:white; margin:0px; padding:0px;}
+
+table {width:100%; font-size:12px; border-collapse:collapse;}
+table td {padding:0px; border-width:0px; vertical-align:top;}
+
+/* 全般的なリンクの設定 */
+a {color:#730303; text-decoration:none; font-weight:bold; background:transparent;}
+a:hover {color: #ff6600;}
+
+/* 一般タグの設定 */
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+/* リスト表示の設定 中央左右のブロックなどで使用 */
+ul {margin:2px; padding:2px; list-style:decimal inside; text-align:left;}
+li {margin-left:2px; list-style:square inside;color:#730303;}
+
+input.formButton {}
+
+/* 最新ニュースの枠 */
+.item {}
+/* 最新ニュースのタイトルバー */
+.itemHead {padding:10px 3px 3px 15px; color:#000000;}
+/* 最新ニュースの投稿情報欄 */
+.itemInfo {text-align:right; padding:3px 10px; border-top:1px solid #CCCCCC;}
+/* 最新ニュースのタイトルの設定 */
+.itemTitle a {font-weight:bold; color:#000000;}
+/* 最新ニュースの投稿者 */
+.itemPoster {font-size:90%;}
+/* 最新ニュースの投稿日 */
+.itemPostDate {font-size:90%;}
+/* 最新ニュースのステータス */
+.itemStats {font-size:90%;}
+/* 最新ニュースのコンテンツ部分 */
+.itemBody {padding:10px;}
+.itemText {margin-top: 5px; margin-bottom:5px; line-height:150%;}
+/* 最新ニュースの1文字目 */
+.itemText:first-letter {}
+/* 最新ニュースのフッター */
+.itemFoot {text-align:right; padding:3px 10px; border-bottom:1px solid #CCCCCC;}
+.itemAdminLink {font-size:90%;}
+.itemPermaLink {font-size:90%;}
+
+th {background:#730303; color:#FFFFFF; padding:3px; vertical-align:middle;}
+th a{color:#FFFFFF;}
+
+/*ヘッダーブロックの定義*/
+td#headerL {font-size:10px; width:180px; vertical-align:bottom; text-align:center; padding-bottom:10px; color:#730303;}
+td#headerC1 {background:#730303; vertical-align:bottom; text-align:center;}
+td#headerC2 {margin:0px; padding:0px;}
+td#headerR {font-size:10px; width:180px; vertical-align:bottom; text-align:center; padding-bottom:10px;}
+td#headerR a{color:#000000; font-weight:normal;}
+td#headerR a:hover{text-decoration:underline;}
+
+.menubar {height:35px; dispaly:block; background:#FFD900; color:#FFFFFF; vertical-align:middle; text-align:center;}
+.menubar a:hover{color:#FFFFFF;}
+.search {height:35px; dispaly:block; background:#FFD900; color:#FFFFFF; vertical-align:middle; text-align:center;}
+
+/*左ブロックの定義*/
+td#leftcolumn {width:180px; background:#FF8000;}
+/*左ブロックタイトルの定義*/
+td#leftcolumn div.blockTitle {padding:10px 3px 3px 15px; color:#FFFFFF; font-weight:bold;}
+/*左ブロックコンテンツの定義*/
+td#leftcolumn div.blockContent {padding:5px; line-height:130%; font-size:11px;}
+
+/* 左ブロック　メインメニューの定義*/
+td#mainmenu a {padding:4px 10px;}
+td#mainmenu a:hover {color:#ffffff;}
+td#mainmenu a.menuTop {padding:4px 10px;}
+td#mainmenu a.menuMain {padding:4px 10px;}
+td#mainmenu a.menuSub {padding:4px 25px;}
+
+/*左ブロック　ユーザーメニューの定義*/
+td#usermenu a{padding:4px 10px;}
+td#usermenu a:hover {color:#ffffff;}
+td#usermenu a.menuTop {padding:4px 10px;}
+td#usermenu a.highlight {background-color: #fcc;}
+
+/*中央ブロックの定義*/
+td#centercolumn {font-size:12px; background:#F3F3F3;}
+
+/*中央-中央ブロックの定義*/
+td#centerCcolumn {padding:0px 3px 3px 3px;}
+td#centerCcolumn div.blockTitle {padding:10px 3px 3px 5px; color:#000000; font-weight:bold;}
+td#centerCcolumn div.blockContent {padding:10px; line-height:150%;}
+
+/*中央-左ブロックの定義*/
+td#centerLcolumn {width:50%; padding:0px 3px 0px 0px;}
+td#centerLcolumn div.blockTitle {padding:10px 3px 3px 5px; color:#000000; font-weight:bold;}
+td#centerLcolumn div.blockContent {padding:10px; line-height:150%;}
+
+/*中央-右ブロックの定義*/
+td#centerRcolumn {width:50%; padding:0px 3px 0px 0px;}
+td#centerRcolumn div.blockTitle {padding:10px 3px 3px 5px; color:#000000; font-weight:bold;}
+td#centerRcolumn div.blockContent {padding:10px; line-height:150%;}
+
+div#content {text-align:left; padding:10px;}
+
+/*右ブロックの定義*/
+td#rightcolumn {width:180px; background:#FF8000;}
+td#rightcolumn div.blockTitle {padding:10px 3px 3px 5px; color:#FFFFFF; font-weight:bold;}
+td#rightcolumn div.blockContent {padding:5px; line-height:130%; font-size:11px;}
+
+/*フッタブロックの定義*/
+td#footerbar {text-align:center; background:#730303; color:#ffffff; font-size:11px; padding:8px;}
+td#footerbar a{color:#ffd900; font-weight:normal;}
+
+/* フォーラムなどの外枠*/
+.outer {}
+/* フォーラムなどの投稿情報欄 */
+.head {background:#CCCCCC; padding:5px; font-weight:bold; color:#666666;}
+
+/* フォーラムなどの交互に色が変わる部分 */
+.even {border:1px solid #DDDDDD; background:#EEEEEE; padding:5px;}
+.odd {border:1px solid #DDDDDD; background:#F3F3F3; padding:5px;}
+/* フォーラムなどのフッター */
+.foot {background:#CCCCCC; padding:5px; font-weight:bold; color:#666666;}
+tr.even td {border:1px solid #DDDDDD; background:#EEEEEE; padding:5px;}
+tr.odd td {border:1px solid #DDDDDD; background:#F3F3F3; padding:5px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+/* Xoopsコードを記述する部分 */
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; padding: 0px 6px 6px 6px;}
+
+/* 引用部分の定義 */
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}

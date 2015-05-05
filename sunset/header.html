@@ -1,0 +1,32 @@
+<table>
+<tr>
+	<td rowspan="2" id="headerL">powered by <b>XOOPS2</b></td>
+	<td id="headerC1"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo.gif" /></a></td>
+	<td rowspan="2" id="headerR">
+	<{if !$xoops_isuser}>
+	<a href="<{$xoops_url}>/user.php">ログイン</a>&nbsp;|&nbsp;
+	<a href="<{$xoops_url}>/viewpmsg.php">新規登録</a>&nbsp;|&nbsp;
+	<a href="<{$xoops_url}>/">サイトマップ</a>
+<{else}>
+	<a href="<{$xoops_url}>/user.php">ユーザ情報</a>&nbsp;|&nbsp;
+	<a href="<{$xoops_url}>/viewpmsg.php">受信箱</a>&nbsp;|&nbsp;
+	<a href="<{$xoops_url}>/user.php?op=logout">ログアウト</a>
+	<{/if}>
+</td>
+</tr>
+
+<tr>
+	<td id="headerC2">
+		<table>
+		<tr>
+		<td class="menubar"><a href="<{$xoops_url}>/">home</a></td>
+		<td class="menubar"><a href="<{$xoops_url}>/modules/news/">news</a></td>
+		<td class="menubar"><a href="<{$xoops_url}>/modules/newbb/">forum</a></td>
+		<td class="menubar"><a href="<{$xoops_url}>/modules/mydownloads/">download</a></td>
+		<td class="menubar"><a href="<{$xoops_url}>/modules/mylinks/">links</a></td>
+		<td class="menubar"><a href="<{$xoops_url}>/modules/contact/">contact</a></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>

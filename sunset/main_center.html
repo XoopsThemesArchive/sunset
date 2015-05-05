@@ -1,0 +1,59 @@
+<td id="centercolumn">
+
+	<!-- 中央ブロック部分の定義 -->
+	<{if $xoops_showcblock == 1}>
+
+	<table cellspacing="0">
+	<tr>
+	<!-- 中央-中央ブロック部分の定義 -->
+	<td id="centerCcolumn" colspan="2">
+		<{foreach item=block from=$xoops_ccblocks}>
+		<div style="padding: 5px;">
+		<{if $block.title|regex_replace:"/.*none/":"none" ne "none"}>
+		<div class="blockTitle"><{$block.title}></div>
+		<{/if}>
+		<div class="blockContent"><{$block.content}></div>
+		</div>
+		<{/foreach}>
+	</td>
+	<!-- 中央-中央ブロック部分終わり -->
+	</tr>
+
+	<tr>
+	<!-- 中央-左ブロック部分の定義 -->
+	<td id="centerLcolumn">
+		<{foreach item=block from=$xoops_clblocks}>
+		<div style="padding: 0px 0px 0px 8px;">
+		<{if $block.title|regex_replace:"/.*none/":"none" ne "none"}>
+		<div class="blockTitle"><{$block.title}></div>
+		<{/if}>
+		<div class="blockContent"><{$block.content}></div>
+		</div>
+		<{/foreach}>
+	</td>
+	<!-- 中央-左ブロック部分終わり -->
+
+	<!-- 中央-右ブロック部分の定義 -->
+	<td id="centerRcolumn">
+		<{foreach item=block from=$xoops_crblocks}>
+		<div style="padding: 0px 5px 0px 0px;">
+		<{if $block.title|regex_replace:"/.*none/":"none" ne "none"}>
+		<div class="blockTitle"><{$block.title}></div>
+		<{/if}>
+		<div class="blockContent"><{$block.content}></div>
+		</div>
+		<{/foreach}>
+	</td>
+	<!-- 中央-右ブロック部分終わり -->
+	</tr>
+	</table>
+
+	<{/if}>
+
+	<div id="content">
+	<{$xoops_contents}>
+	</div>
+
+	<!-- 中央ブロック部分終わり -->
+
+</td>

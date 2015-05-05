@@ -1,0 +1,20 @@
+<!-- 左ブロック部分の定義 -->
+<td id="leftcolumn">
+	<table><tr>
+	<td class="search">
+	<form action="<{$xoops_url}>/search.php" method="get" style="margin:10px 0px;">
+	<input type="text" name="query" size="20"/>
+	<input type="hidden" name="action" value="results" />
+	<input type="submit" name="searchSubmit" value="検索" />
+	</form>
+	</td></tr>
+	</table>
+	
+	<{foreach item=block from=$xoops_lblocks}>
+	<{if $block.title|regex_replace:"/.*none/":"none" ne "none"}>
+	<div class="blockTitle"><{$block.title}></div>
+	<{/if}>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+</td>
+<!-- 左ブロック終わり -->
